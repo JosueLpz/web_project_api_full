@@ -22,8 +22,12 @@ app.use((req, res, next) => {
 });
 
 app.use((err, req, res, next) => {
-  console.error(err);
-  res.status(500).json({ error: "Ocurrió un error interno en el servidor" });
+  const { statusCode = 500, message } = err;
+
+  res.status(statusCode).res.send({
+    messege:
+      statusCode === 500 ? "Se ha producido un error en el servidor" : message,
+  });
 });
 
 app.listen(PORT, () => {

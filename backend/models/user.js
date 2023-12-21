@@ -38,6 +38,8 @@ const userSchema = new mongoose.Schema({
   password: {
     type: Number,
     require: [true, "Contraseña Obligatoria"],
+    select: false,
+    // *El metodo select es para que la base de datos no envia la contraseña o el hash de contraseña al front
   },
 });
 
@@ -45,17 +47,22 @@ userSchema.statics.findUserByCredentials = function findUserByCredentials(
   email,
   password
 ) {
-  return this.findOne({ email }).then((user) => {
-    if (!user) {
-      return Promise.reject(new Error("Incorrect email or password"));
-    }
-    return bcrypt.compare(password, user.password).then((matched) => {
-      if (!matched) {
-        return Promise.reject(new Error("Incorrect email or password"));
-      }
-      return user;
-    });
-  });
+  return (
+    this.findOne({ email })
+      //* usa el metodo selec en la autenticacion con el string "+pass" esto para que la autenticacion si tenga aseso al hash
+      .select("+password")
+      .then((user) => {
+        if (!user) {
+          return Promise.reject(new Error("Incorrect email or password"));
+        }
+        return bcrypt.compare(password, user.password).then((matched) => {
+          if (!matched) {
+            return Promise.reject(new Error("Incorrect email or password"));
+          }
+          return user;
+        });
+      })
+  );
 };
 
 module.exports = mongoose.model("user", userSchema);

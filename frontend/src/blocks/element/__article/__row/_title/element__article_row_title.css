@@ -1,0 +1,10 @@
+.element__article_row_title{
+  width: 240px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

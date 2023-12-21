@@ -1,0 +1,14 @@
+.zoom__text {
+  margin-left: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 14px;
+  color: black;
+  text-shadow: 5px 5px 10px white;
+}
+
+@media screen and (min-width: 574px) {
+  .zoom__text {
+    font-size: 16px;
+  }
+}

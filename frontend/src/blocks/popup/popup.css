@@ -1,0 +1,12 @@
+.popup {
+  border: none;
+  /* display: none; */
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  z-index: 5;
+}
+
+.cierrate {
+  display: none;
+}

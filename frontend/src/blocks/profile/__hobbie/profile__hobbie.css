@@ -1,0 +1,26 @@
+.profile__hobbie{
+  max-width: 400px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: white;
+  margin: 0 auto 35px auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media screen and (min-width: 574px) {
+.profile__hobbie{
+  font-size: 18px;
+  line-height: 22px;
+}
+}
+
+@media screen and (min-width: 880px) {
+.profile__hobbie{
+  grid-area: subtitle;
+  margin: 0;
+}
+}

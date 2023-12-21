@@ -1,0 +1,17 @@
+.form__container-button {
+  margin: 40px auto;
+  display: block;
+  width: 238px;
+  height: 46px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  transition: opacity linear 0.3s;
+}
+
+@media screen and (min-width: 574px) {
+  .form__container-button {
+    width: 358px;
+    height: 50px;
+  }
+}

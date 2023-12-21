@@ -1,0 +1,4 @@
+.form__container_open_active{
+  display: block;
+  animation: fadeonon 1s linear;
+}

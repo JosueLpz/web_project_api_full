@@ -1,0 +1,13 @@
+@keyframes fadeonoff {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.root__windos_fadeoff{
+  animation: fadeonoff 0.7s ease-in-out;
+  -webkit-animation: fadeonoff 0.7s ease-in-out;
+}

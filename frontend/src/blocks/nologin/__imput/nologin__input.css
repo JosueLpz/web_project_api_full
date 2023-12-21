@@ -1,0 +1,19 @@
+.nologin__input {
+  margin: 30px auto;
+  padding-bottom: 10px;
+  width: 358px;
+  display: block;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: 0;
+  background-color: transparent;
+  border-color: #ccc;
+  color: white;
+}
+
+@media screen and (min-width: 880px) {
+  .nologin__input {
+    width: 385px;
+  }
+}

@@ -1,0 +1,16 @@
+.popup-avatar {
+  height: 180px;
+}
+
+@media screen and (min-width: 574px) {
+  .popup-avatar {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .popup-avatar {
+    width: 430px;
+    height: 230px;
+  }
+}

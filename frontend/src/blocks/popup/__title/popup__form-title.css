@@ -1,0 +1,23 @@
+.popup__form-title {
+  margin: 8px auto;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+  text-align: center;
+}
+
+@media screen and (min-width: 574px) {
+  .popup__form-title {
+    margin: 19px auto;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .popup__form-title {
+    text-align: left;
+    margin: 38px 0 38px 27px;
+    font-size: 24px;
+  }
+}

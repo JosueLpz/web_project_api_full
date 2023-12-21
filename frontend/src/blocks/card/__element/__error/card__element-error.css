@@ -1,0 +1,7 @@
+.card__element-error{
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 12px;
+  color: red;
+  visibility: hidden;
+}

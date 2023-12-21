@@ -1,0 +1,16 @@
+.nologin__button {
+  margin: 170px auto 0 auto;
+  display: block;
+  width: 358px;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 880px) {
+  .nologin__button {
+    width: 385px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,17 @@
+@keyframes fadeon {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.root__windos_fadeon{
+  animation: fadeon 0.7s ease-in;
+  -webkit-animation: fadeon 0.7s ease-in;
+}
+
+
+
+

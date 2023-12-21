@@ -1,0 +1,29 @@
+.popup__form {
+  margin: 0 auto;
+  width: 300px;
+  height: 95px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+@media screen and (min-width: 574px) {
+  .popup__form {
+    top: 100%;
+    width: 430px;
+    height: 130px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .popup__form {
+    top: 65%;
+    width: 430px;
+    height: 181px;
+  }
+}

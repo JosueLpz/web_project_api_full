@@ -1,0 +1,15 @@
+.card__element-title {
+  margin: 25px auto 0 auto;
+  width: 238px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+}
+
+@media screen and (min-width: 574px) {
+  .card__element-title {
+    font-size: 24px;
+    line-height: 29px;
+    width: 358px;
+  }
+}

@@ -1,0 +1,16 @@
+.form__container-hobby{
+  margin: 15px auto 0 auto;
+  padding-bottom: 10px;
+  width: 238px;
+  display: block;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: 0;
+}
+
+@media screen and (min-width: 574px){
+.form__container-hobby{
+  width: 358px;
+}
+}

@@ -1,0 +1,14 @@
+.card__element-button-closed{
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -38px;
+  right: 0px;
+  cursor: pointer;
+  transition: transform linear 0.5s;
+  -webkit-transition: transform linear 0.5s;
+  -moz-transition: transform linear 0.5s;
+  -ms-transition: transform linear 0.5s;
+  -o-transition: transform linear 0.5s;
+}

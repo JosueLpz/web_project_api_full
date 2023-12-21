@@ -1,0 +1,16 @@
+.card__element-name-card{
+  margin: 55px  auto 0 auto;
+  padding-bottom: 10px;
+  width: 238px;
+  display: block;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: 0;
+}
+
+@media screen and (min-width: 574px){
+.card__element-name-card{
+  width: 358px;
+}
+}

@@ -1,0 +1,10 @@
+.Infotooltip__button {
+  position: absolute;
+  cursor: pointer;
+  top: -8%;
+  left: 100%;
+  transition: transform linear 0.5s;
+  border: none;
+  background: none;
+  outline: none;
+}

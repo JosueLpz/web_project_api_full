@@ -1,0 +1,14 @@
+.element__article {
+  margin: 0 auto;
+  width: 282px;
+  height: 361px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+
+@media screen and (min-width: 574px) {
+  .element__article {
+    margin: 0;
+  }
+}

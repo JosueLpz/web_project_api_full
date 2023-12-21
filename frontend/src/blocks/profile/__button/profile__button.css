@@ -1,0 +1,22 @@
+.profile__button {
+  width: 282px;
+  height: 58px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: opacity linear 0.1s;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 880px) {
+  .profile__button {
+    grid-area: buton;
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+    border-left: white solid 1px;
+    border-right: white solid 1px;
+  }
+}

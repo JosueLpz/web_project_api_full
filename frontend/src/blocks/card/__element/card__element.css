@@ -1,0 +1,21 @@
+.card__element {
+  margin: 0 auto;
+  width: 282px;
+  height: 322px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+  z-index: 4;
+}
+
+@media screen and (min-width: 574px) {
+  .card__element {
+    width: 430px;
+    height: 330px;
+  }
+}

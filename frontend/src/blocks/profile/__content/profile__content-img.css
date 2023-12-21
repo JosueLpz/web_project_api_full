@@ -1,0 +1,17 @@
+.profile__content-img {
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (min-width: 880px) {
+  .profile__content-img {
+    grid-area: img;
+    align-self: flex-end;
+  }
+}

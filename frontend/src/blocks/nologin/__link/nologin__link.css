@@ -1,0 +1,10 @@
+.nologin__link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: inter;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+}

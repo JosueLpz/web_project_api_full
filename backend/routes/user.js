@@ -15,7 +15,7 @@ const {
 router.post(
   "/signin",
   celebrate({
-    [Segments.BODY]: Joi.object.keys({
+    [Segments.BODY]: Joi.object().keys({
       email: Joi.string().required().email(),
       password: Joi.string().required(),
     }),
@@ -25,7 +25,7 @@ router.post(
 router.post(
   "/signup",
   celebrate({
-    [Segments.BODY]: Joi.object.keys({
+    [Segments.BODY]: Joi.object().keys({
       email: Joi.string().required().email(),
       password: Joi.string().required(),
     }),
@@ -38,7 +38,7 @@ router.get("/", getUser);
 router.get(
   "/:id",
   celebrate({
-    [Segments.PARAMS]: Joi.object.keys({
+    [Segments.PARAMS]: Joi.object().keys({
       id: Joi.string().hex().required(),
     }),
   }),
@@ -47,7 +47,7 @@ router.get(
 router.post(
   "/",
   celebrate({
-    [Segments.BODY]: Joi.object.keys({
+    [Segments.BODY]: Joi.object().keys({
       name: Joi.string().required(),
       about: Joi.string().required(),
       avatar: Joi.string().required().custom(validateURL),
@@ -59,10 +59,10 @@ router.post(
 router.patch(
   "/me/:id",
   celebrate({
-    [Segments.PARAMS]: Joi.object.keys({
+    [Segments.PARAMS]: Joi.object().keys({
       id: Joi.string().hex().required(),
     }),
-    [Segments.BODY]: Joi.object.keys({
+    [Segments.BODY]: Joi.object().keys({
       name: Joi.string().required(),
       about: Joi.string().required(),
     }),
@@ -72,10 +72,10 @@ router.patch(
 router.patch(
   "/me/avatar/:id",
   celebrate({
-    [Segments.PARAMS]: Joi.object.keys({
+    [Segments.PARAMS]: Joi.object().keys({
       id: Joi.string().hex().required(),
     }),
-    [Segments.BODY]: Joi.object.keys({
+    [Segments.BODY]: Joi.object().keys({
       avatar: Joi.string().required().custom(validateURL),
     }),
   }),

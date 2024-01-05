@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const isEmail = require("validator/lib/isEmail");
+const validator = require("validator");
 const bcrypt = require("bcryptjs");
 
 const userSchema = new mongoose.Schema({
@@ -30,14 +30,14 @@ const userSchema = new mongoose.Schema({
     type: String,
     require: [true, "El correo es boligatorio"],
     unique: true,
-  },
-  validate: {
-    validator: (v) => isEmail(v),
-    message: "Formato de correo electrónico incorrecto",
+    validate: {
+      validator: validator.isEmail,
+      message: "Formato de correo electrónico incorrecto",
+    },
   },
   password: {
-    type: Number,
-    require: [true, "Contraseña Obligatoria"],
+    type: String,
+    required: [true, "Contraseña Obligatoria"],
     select: false,
     // *El metodo select es para que la base de datos no envia la contraseña o el hash de contraseña al front
   },

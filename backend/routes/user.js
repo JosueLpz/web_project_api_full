@@ -1,4 +1,4 @@
-const auth = require("./middleware/auth");
+// const auth = require("./middleware/auth");
 const router = require("express").Router();
 const { celebrate, Joi, Segments } = require("celebrate");
 const validateURL = require("../utils/validateURL");
@@ -33,7 +33,7 @@ router.post(
   createUser
 );
 // *Aplicacion de el midd de autorizacion el los routers de usuario
-app.use(auth);
+// app.use(auth);
 router.get("/", getUser);
 router.get(
   "/:id",

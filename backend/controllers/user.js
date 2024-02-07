@@ -1,4 +1,5 @@
 const User = require("../models/user");
+const jwt = require("jsonwebtoken");
 
 const {
   ERROR_CODE_400,
@@ -6,8 +7,6 @@ const {
   ERROR_CODE_500,
   camelCase,
 } = require("../utils/camelCase");
-
-const jwt = require("jsonwebtoken");
 
 module.exports.getUser = (req, res) => {
   User.find({})

@@ -4,6 +4,7 @@ const ERROR_CODE_500 = 500;
 
 const camelCase = (res, statusCode) => {
   res.status(statusCode).send({ message: "Error Intente mas tarde" });
+  console.info(res);
 };
 
 module.exports = {
